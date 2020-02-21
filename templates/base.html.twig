@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{{ 'Cabinet Audit Experius'|trans }}{% endblock %}</title>
+       
+	        <link rel="icon" sizes="57x57" href="images/experius_logo.png">
+
+			<link rel="stylesheet" type="text/css" href="css/material-design-iconic-font.min.css">
+			<link rel="stylesheet" type="text/css" href="css/settings.css">
+			<link rel="stylesheet" type="text/css" href="css/menu-deco.css">
+			<link rel="stylesheet" type="text/css" href="css/glyphicon.css">
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel='stylesheet' id='k2t-cbpBGSlideshow-css' href='https://www.acf.ma/wp-content/themes/lincoln/assets/css/vendor/cbpBGSlideshow.css' type='text/css' media='all' />
+			<link rel='stylesheet' id='k2t-font-awesome-style-css' href='css/font-awesome.min.css' type='text/css' media='all' />
+			<link rel='stylesheet' id='k2t-megamenu-style-css' href='https://www.acf.ma/wp-content/themes/lincoln/assets/css/megamenu.css' type='text/css' media='all' />
+			<link rel='stylesheet' id='k2t-owl-style-css' href='https://www.acf.ma/wp-content/themes/lincoln/assets/css/popular.css' type='text/css' media='all' />
+			<link rel='stylesheet' id='k2t-sequencejs-theme.modern-slide-css' href='https://www.acf.ma/wp-content/themes/lincoln/assets/css/vendor/sequencejs-theme.modern-slide-in.css' type='text/css' media='all' />
+			<link rel='stylesheet' id='k2t-shortcodes-css' href='https://www.acf.ma/wp-content/themes/lincoln/assets/css/k-shortcodes.css' type='text/css' media='all' />
+			<link rel='stylesheet' id='k2t-gallery-css' href='https://www.acf.ma/wp-content/themes/lincoln/assets/css/k-gallery.css' type='text/css' media='all' />
+			<link rel='stylesheet' id='k2t-project-css' href='https://www.acf.ma/wp-content/themes/lincoln/assets/css/k-project.css' type='text/css' media='all' />
+			<link rel='stylesheet' id='k2t-event-css' href='https://www.acf.ma/wp-content/themes/lincoln/assets/css/k-event.css' type='text/css' media='all' />
+			<link rel='stylesheet' id='k2t-teacher-css' href='https://www.acf.ma/wp-content/themes/lincoln/assets/css/k-teacher.css' type='text/css' media='all' />
+			<link rel='stylesheet' id='k2t-course-css' href='https://www.acf.ma/wp-content/themes/lincoln/assets/css/k-course.css' type='text/css' media='all' />
+			<link rel='stylesheet' id='k2t-learndash-css' href='https://www.acf.ma/wp-content/themes/lincoln/assets/css/k-learndash.css' type='text/css' media='all' />
+			<link rel='stylesheet' id='k2t-main-style-css' href='css/main.css' type='text/css' media='all' />
+			<link rel='stylesheet' id='k2t-reponsive-style-css' href='https://www.acf.ma/wp-content/themes/lincoln/assets/css/responsive.css' type='text/css' media='all' />
+			<link rel='stylesheet' id='k2t-plugin-shortcodes-update-css' href='https://www.acf.ma/wp-content/themes/lincoln/assets/css/shortcodes-update.css' type='text/css' media='all' />
+			<link rel='stylesheet' id='k2t-plugin-portfolio-update-css' href='https://www.acf.ma/wp-content/themes/lincoln/assets/css/portfolio-update.css' type='text/css' media='all' />
+			
+			<link rel='stylesheet' id='js_composer_front-css' href='https://www.acf.ma/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.4.5' type='text/css' media='all' />
+			<link rel='stylesheet' id='jquery-ui-smoothness-css' href='https://www.acf.ma/wp-content/plugins/contact-form-7/includes/js/jquery-ui/themes/smoothness/jquery-ui.min.css?ver=1.11.4' type='text/css' media='screen' />
+
+         {% block stylesheets %}{% endblock %} 
+
+        <style id="rs-plugin-settings-inline-css" type="text/css">
+		
+        #rs-demo-id {
+		}		
+		.tp-caption.whitebig, .whitebig {
+			color: #ffffff;
+			text-decoration: none;
+			font-size: 60px;
+			line-height: 1.2px;
+			font-family: Roboto;
+			font-weight: 300;
+			background-color: transparent;
+			border-width: 0px;
+			border-color: rgb(0,0,0);
+			border-style: none;
+			text-shadow: none;
+			
+		}
+
+		.hades.tparrows {
+			cursor: pointer;
+			background: #000;
+			background: rgba(0,0,0,0.15);
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			display: block;
+			z-index: 100;
+		}
+
+			.hades.tparrows:before {
+				font-family: "revicons";
+				font-size: 30px;
+				color: #fff;
+				display: block;
+				line-height: 100px;
+				text-align: center;
+				transition: background 0.3s, color 0.3s;
+			}
+
+			.hades.tparrows.tp-leftarrow:before {
+				content: "\e824";
+			}
+
+			.hades.tparrows.tp-rightarrow:before {
+				content: "\e825";
+			}
+
+			.hades.tparrows:hover:before {
+				color: #aaa;
+				background: #fff;
+				background: rgba(255,255,255,1);
+			}
+
+		.hades .tp-arr-allwrapper {
+			position: absolute;
+			left: 100%;
+			top: 0px;
+			background: #888;
+			width: 100px;
+			height: 100px;
+			-webkit-transition: all 0.3s !important;
+			transition: all 0.3s !important;
+			-ms-filter: "progid:dximagetransform.microsoft.alpha(opacity=0)";
+			filter: alpha(opacity=0);
+			-moz-opacity: 0.0;
+			-khtml-opacity: 0.0;
+			opacity: 0.0;
+			-webkit-transform: rotatey(-90deg);
+			transform: rotatey(-90deg);
+			-webkit-transform-origin: 0% 50%;
+			transform-origin: 0% 50%;
+		}
+
+		.hades.tp-rightarrow .tp-arr-allwrapper {
+			left: auto;
+			right: 100%;
+			-webkit-transform-origin: 100% 50%;
+			transform-origin: 100% 50%;
+			-webkit-transform: rotatey(90deg);
+			transform: rotatey(90deg);
+		}
+
+		.hades:hover .tp-arr-allwrapper {
+			-ms-filter: "progid:dximagetransform.microsoft.alpha(opacity=100)";
+			filter: alpha(opacity=100);
+			-moz-opacity: 1;
+			-khtml-opacity: 1;
+			opacity: 1;
+			-webkit-transform: rotatey(0deg);
+			transform: rotatey(0deg);
+		}
+
+		.hades .tp-arr-iwrapper {
+		}
+
+		.hades .tp-arr-imgholder {
+			background-size: cover;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+		}
+
+		.hades .tp-arr-titleholder {
+		}
+
+		.hades .tp-arr-subtitleholder {
+		}
+
+		.custom.tp-bullets {
+		}
+
+			.custom.tp-bullets:before {
+				content: " ";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: transparent;
+				padding: 10px;
+				margin-left: -10px;
+				margin-top: -10px;
+				box-sizing: content-box;
+			}
+
+		.custom .tp-bullet {
+			width: 12px;
+			height: 12px;
+			position: absolute;
+			background: #aaa;
+			background: rgba(125,125,125,0.5);
+			cursor: pointer;
+			box-sizing: content-box;
+		}
+
+			.custom .tp-bullet:hover,
+			.custom .tp-bullet.selected {
+				background: rgb(125,125,125);
+			}
+
+		.custom .tp-bullet-image {
+		}
+
+		.custom .tp-bullet-title {
+		}
+	</style>
+	
+	<style>
+		* {
+			box-sizing: border-box
+		}
+		.testeur .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, testeur .col-lg-2, .col-lg-3, .testeur .col-lg-4, testeur .col-lg-5, testeur .col-lg-6, .testeur .col-lg-7, .testeur .col-lg-8, .testeur .col-lg-9, .testeur .col-lg-auto, .testeur .col-md, .testeur .col-md-1, .testeur .col-md-10, .testeur .col-md-11, .testeur .col-md-12, .testeur .col-md-2, .testeur .col-md-3, .testeur .col-md-4, .testeur .col-md-5,
+		.testeur .col-md-6, .testeur .col-md-7, .testeur .col-md-8, .testeur .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto,
+		.col-xl, .col-xl-1, .testeur .col-xl-10, .col-xl-11, .testeur .col-xl-12, .testeur .col-xl-2, .testeur .col-xl-3, .testeur .col-xl-4, .testeur .col-xl-5, .testeur .col-xl-6, .testeur .col-xl-7, .testeur .col-xl-8, .testeur .col-xl-9, .testeur .col-xl-auto {
+			padding-right: 7px;
+			padding-left: 7px;
+		}
+		.testeur .dropdown-toggle::after {
+			display: none;
+		}
+
+		body {
+			font-family: Verdana, sans-serif;
+			margin: 0
+		}
+
+		.langDisplay {
+			display: none;
+		}
+
+		.h-element span {
+			font-family: Arial;
+		}
+
+		.testeur .dropdown-menu {
+			position: absolute;
+			top: 64%;
+			right: 25px;
+			z-index: 1000;
+			border: 2px solid #f2f2f2;
+		}
+
+		.mySlides {
+			display: none
+		}
+
+		img {
+			vertical-align: middle;
+		}
+
+		.align-btn {
+			bottom: 20px;
+		}
+
+		/* Slideshow container */
+		.slideshow-container {
+			max-width: 1583px;
+			max-height: 900px;
+			position: relative;
+			margin: auto;
+		}
+
+
+
+		/* Caption text */
+		.text {
+			color: #f2f2f2;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+			color: #f2f2f2;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+		}
+
+		/* The dots/bullets/indicators */
+		.dot {
+			cursor: pointer;
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+		}
+
+			.active, .dot:hover {
+				color: rgb(0,0,0);
+			}
+
+		/* Fading animation */
+		.fadetest {
+			-webkit-animation-name: fadetest !important;
+			-webkit-animation-duration: 1.5s !important;
+			animation-name: fadetest !important;
+			animation-duration: 1.5s !important;
+		}
+
+		@-webkit-keyframes fadetest {
+			from {
+				opacity: .4
+			}
+
+			to {
+				opacity: 1
+			}
+		}
+
+		@keyframes fadetest {
+			from {
+				opacity: .4
+			}
+
+			to {
+				opacity: 1
+			}
+		}
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 767px) {
+			.hades.tparrows {
+				display: none;
+			}
+
+			.txt-image {
+				font-size: 17px !important;
+				line-height: 22px !important;
+				left: 0 !important;
+				margin: -37px auto 0 auto !important;
+				position: fixed;
+				right: 0 !important;
+				top: 50% !important;
+				width: 223px !important;
+			}
+
+			.test {
+				margin-top: -48px;
+			}
+
+			.align-btn {
+				bottom: 43px;
+			}
+		}
+
+		@media only screen and (max-width: 1170px) {
+			.testeur .k2t-body .k2t-content {
+				padding-left: 15px;
+				padding-right: 0px;
+			}
+		}
+	</style>
+
+    </head>
+    <body class="home page-template-default page page-id-2671 offcanvas-type-default  offcanvas-right wpb-js-composer js-comp-ver-5.4.5 vc_responsive" style="margin-right: 0px;">
+
+    	<div class="k2t-container testeur">
+		<header class="k2t-header ">
+
+			<style>
+			</style>
+			<div class="k2t-header-mid  " style="">
+				<div class="k2t-wrap">
+					<div class="k2t-row">
+						<div class="col-2">
+							<div class="h-element ">
+								<a class="k2t-logo" rel="home" href="#">
+									<img src="images/experius_logo.png" alt="EXPERTIUS">
+
+								</a>
+							</div>
+						</div>
+						<div class="col-9">
+							<ul id="menu-main-menu" class="h-element k2t-menu ">
+								<li id="menu-item-2851" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2671 current_page_item menu-item-2851 active"><a href="{{ path('home') }}" class="btn-ripple has-icon"><i class="zmdi zmdi-home"><!----></i><span class="k2t-title-menu">{{ 'Accueil'|trans }}</span></a></li>
+								<li id="menu-item-2925" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2925"><a href="#" class="btn-ripple"><span class="k2t-title-menu">{{ 'Qui sommes nous'|trans }} ?</span></a></li>
+
+								<li id="menu-item-3267" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3267 children ">
+									<a href="#" class="btn-ripple"><span class="k2t-title-menu">{{ 'Nos domaines dexpertises'|trans }}</span> <span class="caret"></span></a>
+									<ul class="sub-menu">
+										<li id="menu-item-3002" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3002 k2t-dropdown-submenu"><a href="#" class="btn-ripple"><span class="k2t-title-menu">{{ 'Accompagnement comptable et financier'|trans }}</span></a></li>
+										<li id="menu-item-3003" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3003 k2t-dropdown-submenu"><a href="#" class="btn-ripple"><span class="k2t-title-menu">{{ 'Audit et Commissariat aux comptes'|trans }}</span></a></li>
+										<li id="menu-item-3006" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3006 k2t-dropdown-submenu"><a href="#" class="btn-ripple"><span class="k2t-title-menu">{{ 'Organisation et Process'|trans }}</span></a></li>
+										<li id="menu-item-3005" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3005 k2t-dropdown-submenu"><a href="#" class="btn-ripple"><span class="k2t-title-menu">{{ 'Conseil juridique'|trans }}</span></a></li>
+										<li id="menu-item-3004" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3004 k2t-dropdown-submenu"><a href="#" class="btn-ripple"><span class="k2t-title-menu">{{ 'Fiscalité'|trans }}</span></a></li>
+										<li id="menu-item-3006" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3006 k2t-dropdown-submenu"><a href="#" class="btn-ripple"><span class="k2t-title-menu">{{ 'Advisory'|trans }}</span></a></li>
+										<li id="menu-item-3006" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3006 k2t-dropdown-submenu"><a href="#" class="btn-ripple"><span class="k2t-title-menu">{{ 'Banking'|trans }}</span></a></li>
+									</ul>
+								</li>
+
+								<li id="menu-item-3069" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3069"><a href="{{ path('values') }}" class="btn-ripple"><span class="k2t-title-menu">{{ 'Nos Valeurs'|trans }}</span></a></li>
+								<li id="menu-item-3124" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3124"><a href="#" class="btn-ripple"><span class="k2t-title-menu">{{ 'Contact'|trans }}</span></a></li>
+							</ul>
+						</div>
+						<div class="col-1">
+
+
+							<div class="dropdown open" style="margin-top: 39px;">
+								<a href="#" id="frFR" class="dropdown-toggle" data-submenu="" data-toggle="dropdown" role="button" aria-expanded="true" onclick="langDisplay()">
+
+									<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> {{ 'Français'|trans }}
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right flagsUl langDisplay">
+									<li style="text-decoration-style: none;list-style: none;">
+										{% for locale in locales %}
+											{% if  locale != app.request.locale %}
+
+												<a href="{{ path('change_locale', {'locale': locale}) }}" onclick="langHide()">{{ locale }}</a>
+
+											{% endif %}
+										{% endfor %}
+									</li>
+
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+			
+			</div>
+			
+			<div class="k2t-header-m">
+				<div class="k2t-menu-m">
+					<a class="m-trigger mobile-menu-toggle"><span></span></a>
+					<div class="mobile-menu-wrap dark-div">
+						<a href="#" class="mobile-menu-toggle"><i class="fa fa-times-circle"></i></a>
+						<ul class="mobile-menu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2671 current_page_item menu-item-2851 active"><a href="{{ path('home') }}">Accueil</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2925"><a href="#">Qui sommes nous ?</a></li>
+
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3267 children">
+								<a href="#">{{ 'Nos domaines dexpertises'|trans }}</a>
+								<ul class="sub-menu">
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3002"><a href="#">ccompagnement comptable et financier</a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3003"><a href="#">Audit et Commissariat aux comptes</a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3004"><a href="#">Organisation et Process</a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3005"><a href="#">Conseil juridique</a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3006"><a href="#">Fiscalité</a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3006"><a href="#">Advisory</a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3006"><a href="#">Banking</a></li>
+
+								</ul>
+							</li>
+
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3069"><a href="{{ path('values') }}">Nos Valeurs</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3124"><a href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="k2t-logo-m">
+					<a class="k2t-logo" rel="home" href="#">
+						<img src="images/experius_logo.png" alt="EXPERTIUS">
+					</a>
+					<!-- .k2t-logo -->
+				</div>
+				<!-- .k2t-logo-m -->
+				<div class="k2t-right-m">
+					<div class="search-box">
+						<i class="fa fa-search"></i>
+					</div>
+					<!-- .search-box -->
+					<div class="canvas-sidebar">
+						<a onclick="javascript:return false;" class="open-sidebar" href="#"><span class="inner"></span></a>
+					</div>
+				</div>
+				<!-- .k2t-right-m -->
+			</div>
+			<!-- .k2t-header-m -->
+		</header>
+		<!-- .k2t-header -->
+		{% block body %} {% endblock %}
+
+		
+		<!-- fin resume des liens  nous, nos domaines et nos valeurs-->
+		<footer class="k2t-footer test">
+
+			<div class="k2t-info" style="background-color:#212121;">
+				<div class="container">
+					<div class="k2t-row">
+						<div class="col-6">
+							EXPERTIUS © 2020.Copyright
+						</div>
+						<div class="col-6">
+							<aside id="nav_menu-2" class="widget widget_nav_menu">
+								<div class="menu-bottom-menu-container">
+									<ul id="menu-bottom-menu" class="menu">
+										<li id="menu-item-3136" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3136"><a href="#">Mentions legales</a></li>
+										<li id="menu-item-3358" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3358"><a href="#">Site map</a></li>
+										<li id="menu-item-3283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3283"><a href="#">Liens utiles</a></li>
+										<li id="menu-item-2667" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2667"><a target="_blank" href="#">Webe par : Fugetech</a></li>
+									</ul>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .k2t-info -->
+
+		</footer>
+		<!-- .k2t-footer -->
+	</div>
+    <!-- .k2t-container -->
+    <!-- Show Offcanvas sidebar -->
+    <!-- End Show Offcanvas sidebar -->
+    <div class="k2t-searchbox">
+        <span class="k2t-searchbox-close"><i class="zmdi zmdi-close"></i></span>
+        <div class="mark"></div>
+        <form class="searchform" role="search" method="get" action="https://www.acf.ma/">
+            <input type="text" value="" name="s" id="s" placeholder="Type your keyword..." />
+            <button type="submit" value="" id="searchsubmit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+
+    <a href="#" class="k2t-btt k2t-element-hover"><i class="zmdi zmdi-chevron-up"></i></a>
+
+
+        
+
+        {% block javascripts %}
+        
+		<script type='text/javascript' src='https://www.acf.ma/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+		<script type='text/javascript' src='https://www.acf.ma/wp-content/themes/lincoln/assets/js/main.js'></script>
+	    <script type="text/javascript" src="assets/js/test.js"></script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4'></script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-includes/js/jquery/ui/dialog.min.js?ver=1.11.4'></script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-includes/js/wpdialog.min.js?ver=1.11.4'></script>
+
+	    <script type='text/javascript' src='https://www.acf.ma/wp-content/plugins/ninja-popups/js/jquery.ck.min.js'></script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-content/plugins/ninja-popups/js/ninjapopups.min.js'></script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-content/plugins/ninja-popups/fancybox2/jquery.fancybox.min.js'></script>
+	    <script type='text/javascript'>
+	        /* <![CDATA[ */
+	        var wpcf7 = {
+	            "apiSettings": {
+	                "root": "https:\/\/www.acf.ma\/wp-json\/contact-form-7\/v1",
+	                "namespace": "contact-form-7\/v1"
+	            },
+	            "jqueryUi": "1"
+	        };
+	        /* ]]> */
+	    </script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.4'></script>
+	    <script type='text/javascript'>
+	        /* <![CDATA[ */
+	        var sb_instagram_js_options = {
+	            "sb_instagram_at": "",
+	            "font_method": "svg"
+	        };
+	        /* ]]> */
+	    </script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-content/plugins/instagram-feed/js/sb-instagram.min.js?ver=1.12.2'></script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-content/themes/lincoln/assets/js/vendor/jquery-easing.js'></script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-content/themes/lincoln/assets/js/vendor/jquery.stellar.min.js'></script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-content/themes/lincoln/assets/js/vendor/ripple.js'></script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-content/plugins/k-project/includes/js/owl.carousel.min.js?ver=1.0'></script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-content/themes/lincoln/assets/js/vendor/jquery.mousewheel.min.js'></script>
+	    <script type='text/javascript'>
+	        /* <![CDATA[ */
+	        var mainParams = {
+	            "sticky_menu": "sticky_top",
+	            "smart_sticky": "1"
+	        };
+	        /* ]]> */
+	    </script>
+	    <script type='text/javascript' src='https://www.acf.ma/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4'></script>
+	    <script type='text/javascript'>
+	        jQuery(document).ready(function (jQuery) {
+	            jQuery.datepicker.setDefaults({
+	                "closeText": "Fermer",
+	                "currentText": "Aujourd\u2019hui",
+	                "monthNames": ["janvier", "f\u00e9vrier", "mars", "avril", "mai", "juin", "juillet", "ao\u00fbt", "septembre", "octobre", "novembre", "d\u00e9cembre"],
+	                "monthNamesShort": ["Jan", "F\u00e9v", "Mar", "Avr", "Mai", "Juin", "Juil", "Ao\u00fbt", "Sep", "Oct", "Nov", "D\u00e9c"],
+	                "nextText": "Suivant",
+	                "prevText": "Pr\u00e9c\u00e9dent",
+	                "dayNames": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
+	                "dayNamesShort": ["dim", "lun", "mar", "mer", "jeu", "ven", "sam"],
+	                "dayNamesMin": ["D", "L", "M", "M", "J", "V", "S"],
+	                "dateFormat": "d MM yy",
+	                "firstDay": 1,
+	                "isRTL": false
+	            });
+	        });
+	    </script>
+	   
+	   
+	    
+        {% endblock %}
+    </body>
+</html>

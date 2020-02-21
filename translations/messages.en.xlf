@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="2lTOrMA" resname="Cabinet Audit Experius">
+        <source>Cabinet Audit Experius</source>
+        <target>Experius Audit Firm</target>
+      </trans-unit>
+      <trans-unit id="2" resname="Commissariat aux comptes">
+        <source>Commissariat aux comptes</source>
+        <target>Statutory auditor</target>
+      </trans-unit>
+       <trans-unit id="3" resname="Nos domaines dexpertises">
+        <source>Nos domaines dexpertises</source>
+        <target>Our fields of expertise</target>
+      </trans-unit>
+      <trans-unit id="4" resname="Accueil">
+              <source>Accueil</source>
+              <target>Home</target>
+      </trans-unit>
+      <trans-unit id="5" resname="Qui sommes nous">
+              <source>Qui sommes nous</source>
+              <target>Who are we</target>
+      </trans-unit>
+      <trans-unit id="6" resname="Accompagnement comptable et financier">
+              <source>Accompagnement comptable et financier</source>
+              <target>Our expertises domains</target>
+      </trans-unit>
+      <trans-unit id="7" resname="Audit et Commissariat aux comptes">
+              <source>Audit et Commissariat aux comptes</source>
+              <target>Our expertises domains</target>
+       </trans-unit>
+       <trans-unit id="8" resname="Organisation et Process">
+               <source>Organisation et Process</source>
+               <target>Our expertises domains</target>
+       </trans-unit>
+       <trans-unit id="9" resname="Conseil juridique">
+            <source>Conseil juridique</source>
+            <target>Our expertises domains</target>
+       </trans-unit>
+       <trans-unit id="10" resname="Fiscalité">
+              <source>Fiscalité</source>
+              <target>Our expertises domains</target>
+        </trans-unit>
+        <trans-unit id="11" resname="Advisory">
+                <source>Advisory</source>
+                <target>Advisory</target>
+          </trans-unit>
+         <trans-unit id="12" resname="Banking">
+                 <source>Banking</source>
+                 <target>Banking</target>
+           </trans-unit>
+         <trans-unit id="13" resname="Nos Valeurs">
+                 <source>Nos Valeurs</source>
+                 <target>Our Values</target>
+          </trans-unit>
+          <trans-unit id="14" resname="Contact">
+                 <source>Contact</source>
+                 <target>Contact</target>
+           </trans-unit>
+
+          <trans-unit id="15" resname="Français">
+               <source>Français</source>
+               <target>English</target>
+          </trans-unit>
+          <trans-unit id="16" resname="Audit financier et comptable">
+                                   <source>Audit financier et comptable</source>
+                     <target>financial audit and accounting</target>
+           </trans-unit>
+
+    </body>
+  </file>
+</xliff>
