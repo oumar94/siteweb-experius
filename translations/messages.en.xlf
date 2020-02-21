@@ -5,7 +5,7 @@
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
-      <trans-unit id="2lTOrMA" resname="Cabinet Audit Experius">
+      <trans-unit id="1" resname="Cabinet Audit Experius">
         <source>Cabinet Audit Experius</source>
         <target>Experius Audit Firm</target>
       </trans-unit>
@@ -27,7 +27,7 @@
       </trans-unit>
       <trans-unit id="6" resname="Accompagnement comptable et financier">
               <source>Accompagnement comptable et financier</source>
-              <target>Our expertises domains</target>
+              <target>Accounting and finaancial consulting</target>
       </trans-unit>
       <trans-unit id="7" resname="Audit et Commissariat aux comptes">
               <source>Audit et Commissariat aux comptes</source>
@@ -35,15 +35,15 @@
        </trans-unit>
        <trans-unit id="8" resname="Organisation et Process">
                <source>Organisation et Process</source>
-               <target>Our expertises domains</target>
+               <target>Organization and Process</target>
        </trans-unit>
        <trans-unit id="9" resname="Conseil juridique">
             <source>Conseil juridique</source>
-            <target>Our expertises domains</target>
+            <target>Legal advisory</target>
        </trans-unit>
        <trans-unit id="10" resname="Fiscalité">
               <source>Fiscalité</source>
-              <target>Our expertises domains</target>
+              <target>Tax advisory</target>
         </trans-unit>
         <trans-unit id="11" resname="Advisory">
                 <source>Advisory</source>
@@ -67,10 +67,63 @@
                <target>English</target>
           </trans-unit>
           <trans-unit id="16" resname="Audit financier et comptable">
-                                   <source>Audit financier et comptable</source>
+                     <source>Audit financier et comptable</source>
                      <target>financial audit and accounting</target>
+          </trans-unit>
+           <trans-unit id="17" resname="Séminaires et formations">
+               <source>Séminaires et formations</source>
+               <target>seminars and trainings</target>
+          </trans-unit>
+
+           <trans-unit id="18" resname="Client">
+              <source>Client</source>
+              <target>Customer</target>
+        </trans-unit>
+        <trans-unit id="19" resname="Solution sur mesure">
+                <source>Solution sur mesure</source>
+                <target>Tailored solutions</target>
+          </trans-unit>
+         <trans-unit id="20" resname="Qualité">
+                 <source>Qualité</source>
+                 <target>Quality</target>
+           </trans-unit>
+         <trans-unit id="21" resname="Transparence">
+                 <source>Transparence</source>
+                 <target>Transparency</target>
+          </trans-unit>
+          <trans-unit id="22" resname="Proximité">
+                 <source>Proximité</source>
+                 <target>Promixity</target>
            </trans-unit>
 
+          <trans-unit id="23" resname="Partage">
+               <source>Partage</source>
+               <target>Share</target>
+          </trans-unit>
+          <trans-unit id="24" resname="EXPERIUS vous offre une expérience technique dans les différentes missions daudit et de conseil dans le cadre dun parténariat de confiance en offrant une écoute active
+	        et une relation de travail collaborative.Nous apportons à nos clients des solutions sur mesure dans differents domaines et les accompagnons dans leurs mise en œuvre.">
+               <source>
+               EXPERIUS vous offre une expérience technique dans les différentes missions daudit et de conseil dans le cadre dun parténariat de confiance en offrant une écoute active
+	        et une relation de travail collaborative.Nous apportons à nos clients des solutions sur mesure dans differents domaines et les accompagnons dans leurs mise en œuvre.
+                </source>
+               <target>
+               As Chartered Accountants, we, at EXPERIUS, strive to closely assist our customers with our technical expertise, through various audit and consulting assignments, in a spirit of open communication and collaborative partnership.
+                We provide a wide range of enterprises with customized solutions according to their Management needs and accompany them towards implementation and continuous assessments.
+               </target>
+          </trans-unit>
+          <trans-unit id="25" resname="Membre de l'ordre">
+                 <source>Membre de l'ordre</source>
+                 <target>Member of the Order</target>
+           </trans-unit>
+         <trans-unit id="26" resname="des experts comptables">
+                 <source>des experts comptables</source>
+                 <target>of Chartered Accountants</target>
+          </trans-unit>
+          <trans-unit id="27" resname="Accompagnement comptable">
+                 <source>Accompagnement comptable</source>
+                 <target>Accounting support</target>
+           </trans-unit>
+                  
     </body>
   </file>
 </xliff>
